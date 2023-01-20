@@ -17,3 +17,5 @@ RUN pip install --upgrade pip
 RUN pip install --no-input -U notebook pandas numpy scikit-learn statsmodels joblib tensorflow matplotlib imbalanced-learn wordcloud pyspark scrapy shap mlflow xgboost ipywidgets widgetsnbextension pandas-profiling kedro kedro-viz
 
 ENV PYSPARK_SUBMIT_ARGS "--packages io.delta:delta-core_2.12:0.8.0,org.mongodb.spark:mongo-spark-connector_2.12:3.0.1 --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog pyspark-shell"
+
+
