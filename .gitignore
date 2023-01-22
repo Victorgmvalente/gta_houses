@@ -2,3 +2,4 @@
 *.har
 *.txt
 *.parquet
+prod1/*
